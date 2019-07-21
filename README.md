@@ -4,7 +4,7 @@ Task: to develop a simple questionnaire system
 The user should be able to have a simple dialog with the system and to go through predefined questions and answers.
 
 Dialog example:
-
+`
 Are you hungry? (Yes/No)
    Yes:
        What would you like to eat? (Hamburger/Pizza/Pop Corn/Chicken)
@@ -18,6 +18,7 @@ Are you hungry? (Yes/No)
                       No? Well... stay hungry then
    No:
        Ok. Call me when you're hungry.
+       `
 
 The system consists of two parts: user app (frontend) and backend.
 
