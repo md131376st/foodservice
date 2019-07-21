@@ -1,0 +1,27 @@
+[
+  {
+    "pk": "1",
+    "model": "foodservise.question",
+    "fields": {
+      "q": "Are you hungry?",
+      "a": {
+        "yes": {
+          "q": "What would you like to eat?",
+          "a": {
+            "Hamburger": "Nice, I will order a hamburger for you!",
+            "Pizza": {
+              "q": "Would you like pizza with mushrooms?",
+              "a": {
+                "yes": "Ok, I will order the best pizza in town for you",
+                "no": "No? Well... stay hungry then"
+              }
+            }
+          },
+          "Pop Corn": "",
+          "Chicken": ""
+        },
+        "no": "Ok. Call me when you're hungry."
+      }
+    }
+  }
+]
