@@ -1,4 +1,4 @@
-# foodservise
+#food service
 Task: to develop a simple questionnaire system
 
 The user should be able to have a simple dialog with the system and to go through predefined questions and answers.
