@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block header %}
+    {% load static %}
+    <script  src="{% static 'javascript/app.js' %}"></script>
+{% endblock %}
+{% block head %}
+    <title>Food Service</title>
+{% endblock %}
+{% block style %}
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center display-4">Food Service</h1>
+            <p class="lead text-center">This is sample questionnaire system</p>
+        </div>
+        <div class="question_req">
+            <h1 class="text-center display-4"><span id="qus"></span></h1>
+        </div>
+            <div class="row justify-content-center align-items-center">
+              <div class="col-sm-6 ">
+              	<form id = "contactForm" method= "POST">{% csrf_token %}
+              		{{ contactForm.as_p }}
+              		<input type="submit" name="contact-submit" class="btn btn-primary" />
+              	</form>
+              </div>
+           </div>
+    </div>
+{% endblock %}
+
