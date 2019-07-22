@@ -50,4 +50,7 @@ class get_food_service(APIView):
 			print(d["q"], ": error happend ->", self.request.query_params.get("ans"))
 			raise Http404("invalid request")
 
+
+def homepage(request):
+	return render(request, 'index.html')
 # Create your views here.
